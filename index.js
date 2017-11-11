@@ -5,3 +5,17 @@ function printBadges(names) {
   }
   return names;
 }
+
+function tailsNeverFails() {
+  function tails() {
+    return Math.random() >= 0.5;
+  }
+
+  let count = 0;
+
+  while(tails()) {
+    count++;
+  }
+
+  return `You got ${count} tails in a row!`;
+}
